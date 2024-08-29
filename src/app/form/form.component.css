@@ -18,3 +18,21 @@ body {
 .purchase-button {
   margin-top: 10px;
 }
+label {
+  font-size: 1rem !important;
+}
+input {
+  padding: 3px 2px !important;
+  font-size: 1rem !important;
+  width: 100%;
+  font-weight: 400;
+  line-height: 0.8;
+}
+@media screen and (max-width: 500px) and (min-width: 320px) {
+  .item-form {
+    width: 100% !important;
+  }
+  .table {
+    width: 100% !important;
+  }
+}
