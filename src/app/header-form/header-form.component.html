@@ -1,0 +1,483 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8">
+      <h2 class="text-center btn btn-primary col-12 mb-3 p-2">Vendor Info</h2>
+      <!-- input  -->
+      <div class="form-group">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-2">
+            <label for="chooseItem">Date:</label>
+          </div>
+          <div class="col-md-2">
+            <input
+              type="date"
+              class="form-control"
+              id="chooseItem"
+              placeholder=""
+            />
+          </div>
+          <div class="col-md-1">
+            <label for="chooseItem">ID:</label>
+          </div>
+          <div class="col-md-1">
+            <input
+              type="text"
+              class="form-control"
+              id="chooseItem"
+              placeholder="0"
+              disabled
+            />
+          </div>
+          <div class="col-md-1">
+            <label for="chooseItem">MVNo:</label>
+          </div>
+          <div class="col-md-1">
+            <input
+              type="text"
+              class="form-control"
+              id="chooseItem"
+              placeholder="006591"
+            />
+          </div>
+          <div class="col-md-2">
+            <label for="chooseItem">ST Invoice No:</label>
+          </div>
+          <div class="col-md-2">
+            <input
+              type="text"
+              class="form-control"
+              id="chooseItem"
+              placeholder="006591"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-md-2">
+            <label for="chooseItem">SaleTex Party:</label>
+          </div>
+          <div class="col-md-4">
+            <input
+              type="text"
+              class="form-control"
+              id="chooseItem"
+              placeholder=""
+            />
+          </div>
+          <div class="col-md-2">
+            <label for="chooseItem">With Refrence Of:</label>
+          </div>
+          <div class="col-md-4">
+            <input
+              type="text"
+              class="form-control"
+              id="chooseItem"
+              placeholder="0"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- <div class="form-group">
+        <div class="row">
+          <div class="col-md-2">
+            <label for="chooseItem">Contact us:</label>
+          </div>
+          <div class="col-md-4">
+            <input
+              type="text"
+              class="form-control"
+              id="chooseItem"
+              placeholder=""
+            />
+          </div>
+          <div class="col-md-2">
+            <label for="chooseItem">City:</label>
+          </div>
+          <div class="col-md-4">
+            <input
+              type="text"
+              class="form-control"
+              id="chooseItem"
+              placeholder="0"
+            />
+          </div>
+        </div>
+      </div> -->
+      <!-- input end -->
+
+      <!-- input  -->
+      <!-- <div class="form-group">
+        <div class="row">
+          <div class="col-md-2">
+            <label for="chooseItem">Address:</label>
+          </div>
+          <div class="col-md-10">
+            <input type="text" class="form-control" id="" placeholder="" />
+          </div>
+        </div>
+      </div> -->
+      <!-- input end -->
+      <!-- input  -->
+
+      <!-- input end -->
+      <!-- input  -->
+      <!-- <div class="form-group">
+        <div class="row">
+          <div class="col-md-2">
+            <label for="chooseItem">NTN:</label>
+          </div>
+          <div class="col-md-4">
+            <input
+              type="text"
+              class="form-control"
+              id="chooseItem"
+              placeholder=""
+            />
+          </div>
+          <div class="col-md-2">
+            <label for="chooseItem">STN:</label>
+          </div>
+          <div class="col-md-4">
+            <input
+              type="text"
+              class="form-control"
+              id="chooseItem"
+              placeholder="0"
+            />
+          </div>
+        </div>
+      </div> -->
+      <div class="mb-3">
+        <button class="btn btn-success" (click)="toggleForm()">Builty</button>
+      </div>
+      <div *ngIf="showForm" class="border shadow">
+        <div class="form-group p-3">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-md-2">
+              <label for="chooseItem">Builty No:</label>
+            </div>
+            <div class="col-md-1">
+              <input
+                type="text"
+                class="form-control"
+                id="chooseItem"
+                placeholder=""
+              />
+            </div>
+            <div class="col-md-1">
+              <label for="chooseItem">Goods:</label>
+            </div>
+            <div class="col-md-1">
+              <input
+                type="text"
+                class="form-control"
+                id="chooseItem"
+                placeholder="0"
+              />
+            </div>
+            <div class="col-md-1">
+              <label for="chooseItem">Transport:</label>
+            </div>
+            <div class="col-md-2">
+              <input
+                type="text"
+                class="form-control"
+                id="chooseItem"
+                placeholder="006591"
+              />
+            </div>
+            <div class="col-md-2">
+              <label for="chooseItem">Key Notes:</label>
+            </div>
+            <div class="col-md-2">
+              <input
+                type="text"
+                class="form-control"
+                id="chooseItem"
+                placeholder="006591"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- input end -->
+      <!-- input  -->
+      <!-- <div class="form-group">
+        <div class="row">
+          <div class="col-md-2">
+            <label for="chooseItem">Bilty No.:</label>
+          </div>
+          <div class="col-md-10">
+            <input
+              type="text"
+              class="form-control"
+              id="chooseItem"
+              placeholder="Enter Rate"
+            />
+          </div>
+        </div>
+      </div> -->
+      <!-- input end -->
+      <!-- <div class="form-group">
+        <div class="row">
+          <div class="col-md-2">
+            <label for="chooseItem">Goods:</label>
+          </div>
+          <div class="col-md-10">
+            <input
+              type="text"
+              class="form-control"
+              id="chooseItem"
+              placeholder="Enter Rate"
+            />
+          </div>
+        </div>
+      </div> -->
+      <!-- input end -->
+      <!-- input  -->
+      <!-- <div class="form-group">
+        <div class="row">
+          <div class="col-md-2">
+            <label for="chooseItem">Transport:</label>
+          </div>
+          <div class="col-md-10">
+            <input
+              type="text"
+              class="form-control"
+              id="chooseItem"
+              placeholder="Enter Rate"
+            />
+          </div>
+        </div>
+      </div> -->
+      <!-- input end -->
+      <!-- select start -->
+      <!-- <div class="form-group">
+        <div class="row">
+          <div class="col-md-2">
+            <label for="chooseItem">Key Notes:</label>
+          </div>
+          <div class="col-md-10">
+            <input
+              type="text"
+              class="form-control"
+              id="chooseItem"
+              placeholder="Enter Rate"
+            />
+          </div>
+        </div>
+      </div> -->
+      <!-- select end -->
+      <!-- input  -->
+    </div>
+    <!-- 2nd form start here  -->
+    <div class="col-md-4">
+      <h2 class="text-center btn btn-primary col-12 mb-3 p-2">
+        Voucher Calculations
+      </h2>
+
+      <div class="form-group">
+        <div class="row d-flex justify-content-center align-items-center">
+          <!-- input  -->
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-3">
+                <label for="chooseItem">Total Qty:</label>
+              </div>
+              <div class="col-md-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="chooseItem"
+                  placeholder=""
+                />
+              </div>
+              <div class="col-md-3">
+                <label for="chooseItem">Ret Qty</label>
+              </div>
+              <div class="col-md-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="chooseItem"
+                  placeholder="0"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- input end -->
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-md-3">
+            <label for="chooseItem">Total Amount:</label>
+          </div>
+          <div class="col-md-9">
+            <input
+              type="text"
+              class="form-control"
+              id="chooseItem"
+              placeholder="1050000"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- input  -->
+      <div class="form-group">
+        <div class="row">
+          <div class="col-md-3">
+            <label for="chooseItem">Total Return:</label>
+          </div>
+          <div class="col-md-9">
+            <input
+              type="text"
+              class="form-control"
+              id="chooseItem"
+              placeholder="0"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- input end -->
+      <!-- input  -->
+      <div class="form-group">
+        <div class="row">
+          <div class="col-md-3">
+            <label for="chooseItem">Amount Excl ST:</label>
+          </div>
+          <div class="col-md-9">
+            <input
+              type="text"
+              class="form-control"
+              id="chooseItem"
+              placeholder="Enter Rate"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- input end -->
+      <!-- input  -->
+      <div class="form-group">
+        <div class="row">
+          <div class="col-md-3">
+            <label for="chooseItem">ST Amount:</label>
+          </div>
+          <div class="col-md-9">
+            <input
+              type="text"
+              class="form-control"
+              id="chooseItem"
+              placeholder="1809000"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- input end -->
+      <!-- input  -->
+      <div class="form-group">
+        <div class="row">
+          <div class="col-md-3">
+            <label for="chooseItem" class="text-muted"
+              >Amount Include ST:</label
+            >
+          </div>
+          <div class="col-md-9">
+            <input
+              type="text"
+              class="form-control"
+              id="chooseItem"
+              placeholder="Enter Rate"
+              disabled
+            />
+          </div>
+        </div>
+      </div>
+      <!-- input end -->
+      <div class="form-group">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-3">
+            <label for="chooseItem" class="text-primary fw-bold"
+              >Cash Rcv:</label
+            >
+          </div>
+          <div class="col-md-2">
+            <input
+              type="text"
+              class="form-control"
+              id="chooseItem"
+              placeholder="0.00"
+            />
+          </div>
+          <div class="col-md-3 d-flex justify-content-start align-items-start">
+            <label for="chooseItem" class="text-danger fw-bold"
+              >User Discount:</label
+            >
+          </div>
+          <div class="col-md-4">
+            <input
+              type="text"
+              class="form-control"
+              id="chooseItem"
+              placeholder="Enter Disc"
+              disabled
+            />
+          </div>
+        </div>
+      </div>
+      <!-- input end -->
+      <!-- input  -->
+      <div class="form-group">
+        <div class="row">
+          <div class="col-md-3">
+            <label for="chooseItem" class="text-muted">Net Bill:</label>
+          </div>
+          <div class="col-md-9">
+            <input
+              type="text"
+              class="form-control"
+              id="chooseItem"
+              placeholder="11229000"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- input end -->
+      <!-- input  -->
+      <div class="form-group">
+        <div class="row">
+          <div class="col-md-3">
+            <label for="chooseItem" class="text-muted">Prev Balance:</label>
+          </div>
+          <div class="col-md-9">
+            <input
+              type="text"
+              class="form-control"
+              id="chooseItem"
+              placeholder="0.000000"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- input end -->
+      <!-- input  -->
+      <div class="form-group">
+        <div class="row">
+          <div class="col-md-3">
+            <label for="chooseItem" class="fw-bold">Current Balance:</label>
+          </div>
+          <div class="col-md-9">
+            <input
+              type="text"
+              class="form-control"
+              id="chooseItem"
+              placeholder="111850000"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- input end -->
+    </div>
+  </div>
+</div>
